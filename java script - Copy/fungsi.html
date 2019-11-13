@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Belajar Fungsi Java script</title>
+</head>
+<body>
+	<script>
+
+		//fungsi biasa
+		function inifungsi(){
+			document.write("fungsi berhasil <br>");
+		}
+
+		 inifungsi();
+		
+		//fungsi dengan exspresi
+		const fungsisaya= function itufungsi(){
+			document.write( " fungsi saya tidak berhasil <br>");
+		}
+		fungsisaya()
+
+		//fungsi dengan tanda panah / arrow function =>
+		const fungsiketiga = () =>{
+			document.write("fungsi ketiga tidak berhasil <br>");
+		}
+		fungsiketiga()
+		
+		
+		//fungsi dengan kontruksi
+		const fungsikeempat = new Function () 
+			document.write("fungsi keempat tidak berhasil <br>");
+		
+		fungsikeempat();
+	</script>
+
+</body>
+</html>

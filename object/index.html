@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Belajar Object</title>
+    </head>
+    <body>
+        <script>
+
+            const data = {
+                firstName:"ilham",
+                lastName:"haekal",
+                umur: 15,
+                hobbies: [
+                    'belajar',
+                    'makan',
+                    'tidur',
+                    'gaming',
+                    'ngoding'
+                ],
+                schools: {
+                    sd:"SD Negeri 010 Cilamaya",
+                    smp:"SMP Negeri 273",
+                    smk:"SMK Jakarta Pusat 1"
+                },
+                showData: function(){
+                    document.write(`
+                    Nama: ${this.firstName+" "+this.lastName}<br>
+                    umur: ${this.umur}<br>
+                    Hobbies : ${this.hobbies[4]}<br>
+                    SMK: ${this.schools.smk}
+                    `);
+                }
+            }
+
+            data.showData();
+        </script>
+        
+    </body>
+</html>

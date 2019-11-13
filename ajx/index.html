@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Belajar AJAX</title>
+    </head>
+    <body>
+        <h1>Belajar AJAX</h1>
+        <div id="hasil"></div>
+        <button onclick="loadContent();">load Content</button>
+        <script>
+            function loadContent(){
+                const ajax =new XMLHttpRequest();
+                const url = "https://api.github.com/users/muih";
+                
+                ajax.onreadystatechange = function(){
+                    if(this.readyState == 4 && this.status == 200) {
+                        document.getElementById("hasil").innerHTML = this.responseText;
+                    };
+                };
+                ajax.open("GET", url, true);
+                ajax.send();
+            }
+
+        </script>
+
+    </body>
+</html>

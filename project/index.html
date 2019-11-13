@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <link rel="stylesheet" href="app.js">
+      <div class="machine">
+          <div class="section">
+            <div class="shelves"></div>
+          </div>
+          <div class="section">
+            <div class="selection"><a>F</a><a>P</a><a>S</a><a>1</a><a>2</a><a>3</a></div>
+          </div>
+          <div class="section">
+            <div class="coins">
+              <div class="coin"><a data-coin="50">50p</a></div>
+              <div class="coin"><a data-coin="20">20p</a></div>
+              <div class="coin"><a data-coin="10">10p</a></div>
+            </div>
+          </div>
+          <div class="section">
+            <form>
+              <input type="text" name="selection" required="true" placeholder="XX" maxlength="2" pattern="[a-zA-Z]{1}[0-9]{1}"/>
+              <input type="number" name="coinage" required="true" placeholder="0.00" step="0.10" value="0.00" pattern="d+(.d{2})?"/>
+              <button type="submit">Vend</button>
+            </form>
+          </div>
+          <div class="section">
+            <div class="tray"></div>
+            <div class="coin_return"></div>
+          </div>
+        </div>
+  </body>
+</html>

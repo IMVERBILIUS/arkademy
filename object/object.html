@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id=show></div>
+	<script type="text/javascript">
+		let buku = {
+			judul_buku : "sikancil",
+			Penulis: "M.B. Rahimsyah A.R.",
+			penerbit:" Lingkar Media",
+			tahun_terbit:" 2003",
+			show : function(){
+				return this.judul_buku + "Penulis" + this.Penulis + "penerbit" + this.penerbit + "tahun_terbit"+this.tahun_terbit
+			}
+
+		}
+		console.log(buku)
+		console.log(buku.judul_buku)
+		console.log(buku.Penulis)
+		console.log(buku.penerbit)
+		console.log(buku.tahun_terbit)
+		console.log(buku.show())
+
+		let bukuh = [
+		{
+			judul_buku : "sikancil",
+			Penulis: "M.B. Rahimsyah A.R.",
+			penerbit:" Lingkar Media",
+			tahun_terbit:" 2003",
+			show : function(){
+				return this.judul_buku + "Penulis" + this.Penulis + "penerbit" + this.penerbit + "tahun_terbit"+this.tahun_terbit
+			}
+
+		},
+	    {
+			judul_buku : "suparman",
+			Penulis: "M.B. Rahimsyah A.R.",
+			penerbit:" Lingkar Media",
+			tahun_terbit:" 2060",
+			show : function(){
+				return this.judul_buku + "Penulis" + this.Penulis + "penerbit" + this.penerbit + "tahun_terbit"+this.tahun_terbit
+			}
+
+		}
+	]
+	console.log(bukuh[0].show())
+	console.log(bukuh[1].show())
+	document.querySelector("#show").innerHTML = bukuh[0].show()
+
+	let judul_buku = ['sikancil','suparman']
+	console.log(judul_buku(0))
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<HTML>
+<HEAD>
+ <meta charset="utf-8">
+ <STYLE>
+ .KALK{MARGIN:0 40%;}
+ .KALK .BUTT{MARGIN:2PX;WIDTH:48PX;HEIGHT:25PX;FONT-WEIGHT:BOLD;}
+ </STYLE>
+ <link rel="stylesheet"  href="css/main.css">
+ </HEAD>
+<BODY >
+<FORM NAME="KAL" class="KALK">
+ <TABLE BORDER=1; WIDTH=230; HEIGHT=150; STYLE="BACKGROUND:#999;">
+ <TR>
+ <TD HEIGHT=30; STYLE="BACKGROUND:#555;">
+ <INPUT TYPE="text" NAME="Input" Size="23"> <SPAN STYLE="COLOR:#FFF">&nbsp;<I>Kalkulator prof</I></SPAN>
+ <br>
+ </TD>
+ </TR>
+ <TR>
+ <TD>
+ <INPUT CLASS="BUTT" TYPE="button" NAME="seven" VALUE=" 7 " OnClick="KAL.Input.value += '7'">
+ <INPUT CLASS="BUTT" TYPE="button" NAME="eight" VALUE=" 8 " OnCLick="KAL.Input.value += '8'">
+ <INPUT CLASS="BUTT" TYPE="button" NAME="nine" VALUE=" 9 " OnClick="KAL.Input.value += '9'">
+ <INPUT CLASS="BUTT" TYPE="button" NAME="plus" VALUE=" + " OnClick="KAL.Input.value += ' + '">
+ <br>
+ <INPUT CLASS="BUTT" TYPE="button" NAME="four" VALUE=" 4 " OnClick="KAL.Input.value += '4'">
+ <INPUT CLASS="BUTT" TYPE="button" NAME="five" VALUE=" 5 " OnCLick="KAL.Input.value += '5'">
+ <INPUT CLASS="BUTT" TYPE="button" NAME="six" VALUE=" 6 " OnClick="KAL.Input.value += '6'">
+ <INPUT CLASS="BUTT" TYPE="button" NAME="minus" VALUE=" - " OnClick="KAL.Input.value += ' - '">
+ <br>
+ <INPUT CLASS="BUTT" TYPE="button" NAME="one" VALUE=" 1 " OnClick="KAL.Input.value += '1'">
+ <INPUT CLASS="BUTT" TYPE="button" NAME="two" VALUE=" 2 " OnCLick="KAL.Input.value += '2'">
+ <INPUT CLASS="BUTT" TYPE="button" NAME="three" VALUE=" 3 " OnClick="KAL.Input.value += '3'">
+ <INPUT CLASS="BUTT" TYPE="button" NAME="times" VALUE=" x " OnClick="KAL.Input.value += ' * '">
+ <br>
+ <INPUT CLASS="BUTT" TYPE="button" NAME="clear" VALUE=" C " OnClick="KAL.Input.value = ''">
+ <INPUT CLASS="BUTT" TYPE="button" NAME="zero" VALUE=" 0 " OnClick="KAL.Input.value += '0'">
+ <INPUT CLASS="BUTT" TYPE="button" NAME="DoIt" VALUE=" = " OnClick="KAL.Input.value = eval(KAL.Input.value)">
+ <INPUT CLASS="BUTT" TYPE="button" NAME="div" VALUE=" / " OnClick="KAL.Input.value += ' / '">
+ <br>
+ </TD>
+ </TR>
+ </TABLE>
+</FORM>
+</BODY>
+</HTML>

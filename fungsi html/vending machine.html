@@ -1,0 +1,235 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <style>#include <stdio.h>
+                int main()
+                {
+                    float money;
+                
+                    int choice;
+                
+                    float change;
+                7
+                 
+                
+                    printf("Name list of beverage: ");
+                
+                    printf("\n\n");
+                010
+                    printf("1. Pepsi");                          printf("\t\t\tRM1.00\n");
+                011
+                    printf("2. Miranda");                        printf("\t\t\tRM1.00\n");
+                012
+                    printf("3. Mountain Dew");                   printf("\t\t\tRM1.00\n");
+                013
+                    printf("4. Coca Cola");                      printf("\t\t\tRM1.00\n");
+                014
+                    printf("5. Revive");                         printf("\t\t\tRM1.00\n");
+                015
+                    printf("6. Nestle Milo");                    printf("\t\t\tRM2.00\n");
+                016
+                    printf("7. Cincau");                         printf("\t\t\tRM1.00\n");
+                017
+                    printf("8. Chrysanthemum Tea");              printf("\t\tRM1.00\n");
+                018
+                    printf("9. Lipton Ice Lemon Tea");           printf("\t\tRM1.00\n");
+                019
+                    printf("10. Mineral Water");                  printf("\t\tRM1.00\n");
+                020
+                    printf("11. Cadburry Black Forest");          printf("\tRM3.60\n");
+                021
+                    printf("12. Kitkat");                         printf("\t\t\tRM2.00\n");
+                022
+                    printf("13. Crispy");                         printf("\t\t\tRM2.00\n");
+                023
+                    printf("14. Crunch");                         printf("\t\t\tRM2.50\n");
+                024
+                    printf("15. Mars");                           printf("\t\t\tRM2.50\n");
+                025
+                    printf("16. Kinder Bueno");                   printf("\t\tRM2.50\n");
+                026
+                    printf("17. White Kinder Bueno");             printf("\t\tRM2.50\n");
+                027
+                    printf("18. Milky Bar");                      printf("\t\t\tRM2.00\n");
+                028
+                    printf("19. M&M");                            printf("\t\t\t\tRM2.50\n");
+                029
+                    printf("20. Choki Choki");                    printf("\t\t\tRM2.00\n");
+                030
+                    printf("\n\n");
+                031
+                 
+                032
+                    printf("Enter your choice: ");
+                033
+                    scanf("%d",&choice);
+                034
+                 
+                035
+                    switch(choice)  {
+                036
+                    case 1:
+                037
+                         printf("You choose Pepsi");                  printf("\tRM1.00\n");
+                038
+                         break;
+                039
+                    case 2:
+                040
+                         printf("You choose Miranda");                printf("\tRM1.00\n");
+                041
+                         break;
+                042
+                    case 3:
+                043
+                         printf("You choose Mountain Dew");           printf("\tRM1.00\n");
+                044
+                         break;
+                045
+                    case 4:
+                046
+                         printf("You choose Coca Cola");              printf("\tRM1.00\n");
+                047
+                         break;
+                048
+                    case 5:
+                049
+                         printf("You choose Revive");                 printf("\tRM1.00\n");
+                050
+                         break;
+                051
+                    case 6:
+                052
+                         printf("You choose Nestle Milo");            printf("\tRM2.00\n");
+                053
+                         break;
+                054
+                    case 7:
+                055
+                         printf("You choose Cincau");                 printf("\tRM1.00\n");
+                056
+                         break;
+                057
+                    case 8:
+                058
+                         printf("You choose Chrysanthemum Tea");      printf("\tRM1.00\n");
+                059
+                         break;
+                060
+                    case 9:
+                061
+                         printf("You choose Lipton Ice Lemon Tea");   printf("\tRM1.00\n");
+                062
+                         break;
+                063
+                    case 10:
+                064
+                         printf("You choose Mineral Water");          printf("\tRM1.00\n");
+                065
+                         break;
+                066
+                    case 11:
+                067
+                         printf("You choose Cadburry Black Forest");  printf("\tRM3.60\n");
+                068
+                         break;
+                069
+                    case 12:
+                070
+                         printf("You choose Kitkat");                 printf("\tRM2.00\n");
+                071
+                         break;
+                072
+                    case 13:
+                073
+                         printf("You choose Crispy");                 printf("\tRM2.00\n");
+                074
+                         break;
+                075
+                    case 14:
+                076
+                         printf("You choose Crunch");                 printf("\tRM2.50\n");
+                077
+                         break;
+                078
+                    case 15:
+                079
+                         printf("You choose Mars");                   printf("\tRM2.50\n");
+                080
+                         break;
+                081
+                    case 16:
+                082
+                         printf("You choose Kinder Bueno");           printf("\tRM2.50\n");
+                083
+                         break;
+                084
+                    case 17:
+                085
+                         printf("You choose White Kinder Bueno");     printf("\tRM2.50\n");
+                086
+                         break;
+                087
+                    case 18:
+                088
+                         printf("You choose Milky Bar");              printf("\tRM2.00\n");
+                089
+                         break;
+                090
+                    case 19:
+                091
+                         printf("You choose M&M");                    printf("\tRM2.50\n");
+                092
+                         break;
+                093
+                    case 20:
+                094
+                         printf("You choose Choki Choki");            printf("\tRM2.00\n");
+                095
+                         break;
+                096
+                    default:
+                097
+                         printf("Invalid input!\n");
+                098
+                         break;
+                099
+                    }
+                100
+                 
+                101
+                    printf("Enter your money: ");
+                102
+                    scanf("%.2f",&money);
+                103
+                    printf("\n\n");
+                104
+                 
+                105
+                    if (money > 0)
+                106
+                        printf("ACCEPTED!\n");
+                107
+                    else
+                108
+                        printf("NOT ACCEPTED!\n");
+                109
+                    printf("\n\n");
+                110
+                 
+                111
+                    change = money - choice;
+                112
+                    printf("Your change is %.2f", change);
+                113
+                 
+                114
+                    return 0;
+                115
+                }
+                </style>
+
+    </body>
+</html>

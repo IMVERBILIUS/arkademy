@@ -1,0 +1,16 @@
+.body{
+	margin:0;
+	padding: 0
+}
+
+.wrap-header{
+	border: 2px solid black;
+	background-color: grey;
+	padding-top:20px;
+	padding-bottom: :20px  
+
+}
+.header-title{
+ color:red;
+ text-align: center;
+}

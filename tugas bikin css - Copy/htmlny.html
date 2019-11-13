@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Belajar Fungsi di Javascript</title>
+     <link href="/assets/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+
+</head>
+<body style="background-image: url(https://cdn.wonderfulengineering.com/wp-content/uploads/2014/05/laptop-wallpaper-29-800x450.jpg)">
+    
+    <fieldset>
+        <legend>Input Form</legend>
+        <input type="text" name="barang" placeholder="input nama barang..." />
+        <input type="button" onclick="addBarang()" value="Tambah" />
+    </fieldset>
+
+    <div class="container">
+    <h2>Product List</h2>
+        <button class="btn btn-success" data-toggle="modal" data-target="#myModalAdd">Add New</button>
+    <table class="table table-striped" id="mytable">
+      <thead>
+        <tr>
+          <th>Product ID</th>
+          <th>Product Name</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+         {{#each results}}
+        <tr>
+          <td>{{ product_id }}</td>
+          <td>{{ product_name }}</td>
+      </tr>
+  </tbody>
+</table>
+</div>
+    <script src="fungsi.js"></script>
+</body>
+</html
